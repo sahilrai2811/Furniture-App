@@ -1,0 +1,33 @@
+{
+    "furniture":  [
+        {
+        "id": 1,
+        "category": "LOUNGE",
+        "name": "Coombes",
+        "price":2600,
+        "rating": 5,
+        "path":"./assets/book-nook-armchair-o.jpg",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+    },
+    {
+        "id": 2,
+        "category": "TABLE & CHAIRS",
+        "name": "Keeve Set",
+        "price":7300,
+        "rating": 3,
+        "path":"./assets/table&chair.webp",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+    
+    },
+    {
+        "id": 3,
+        "category": "ARMCHAIR",
+        "name": "Nille",
+        "price":5000,
+        "rating": 5,
+        "path":"./assets/lounge.jpg",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+    
+    }
+    ]
+  }
