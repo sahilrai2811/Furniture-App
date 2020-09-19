@@ -1,0 +1,86 @@
+.nav-link {
+    color: rgb(15, 20, 59);
+    font-size: small;
+    font-weight: 600;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: white !important;
+}
+
+.downArrorw{
+    float: right;
+}
+
+a.card-link {
+    color: rgb(9, 10, 17);
+    font-size: small;
+    font-weight: 600;
+}
+
+.card-header {
+    padding: .75rem 0 !important;
+    margin-bottom: 0;
+    background-color: white !important;
+    border-bottom: 0px !important;
+}
+
+.card.side{
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 1px solid !important;
+
+}
+
+.name {
+    font-size: medium;
+    margin: -1rem;
+    font-weight: 600;
+}
+.price {
+    float: right;
+}
+.category{
+    margin-left: -1rem;
+    font-size: smaller;
+    color: grey;
+}
+
+i.tiny.material-icons {
+    font-size: 16px;
+}
+
+.carousel-item {
+    margin: 3rem;
+}
+.nameSpec {
+    margin-top: 10rem;
+    font-size: small;
+    font-weight: 700;
+    color: slategrey;
+}
+
+.categorySpec {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.detailsSpec {
+    margin-top: 1rem;
+    font-size: smaller;
+}
+
+button.btn.btn-dark {
+    width: inherit;
+    margin-left: -2rem;
+}
+.gerySm {
+    font-size: small;
+    color: darkgrey;
+}
+.largeTxt{
+    font-size: x-large;
+    font-weight: 400;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+</head>
+<body onload="onloadf()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="large material-icons navbarIcon">insert_chart</i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="homePage()">HOME </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MAGAZINE</a>
+              </li>
+    
+          </ul>
+ 
+          <i class="large material-icons navbarIcon mr-2">search</i>
+            <div class="md-form mt-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+              </div>
+            <button class="btn" type="submit"><i class="large material-icons navbarIcon">add_shopping_cart</i></button>
+              <a class="nav-link" href="#" onclick="alertBox()">LOGIN</a>
+        </div>
+      </nav>
+      <div class="container-fluid">
+    <div class="row" id="fullPage">
+      <div class="col-md-3">
+        <div id="accordion">
+
+            <div class="card side">
+              <div class="card-header" data-toggle="collapse" href="#collapseOne">
+                <a class="card-link" >
+                  Collection
+                </a>
+                <i class="samll material-icons downArrorw">keyboard_arrow_down</i>
+              </div>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    Details
+                </div>
+              </div>
+            </div>
+          
+            <div class="card side">
+              <div class="card-header" data-toggle="collapse" href="#collapseTwo">
+                <a class="collapsed card-link" >
+                  Color
+                </a>
+                <i class="samll material-icons downArrorw">keyboard_arrow_down</i>
+
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          
+            <div class="card side">
+              <div class="card-header" data-toggle="collapse" href="#collapseThree">
+                <a class="collapsed card-link">
+                  Category
+                </a>
+                <i class="samll material-icons downArrorw">keyboard_arrow_down</i>
+
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        
+      </div>
+
+      <div class="col-md-9" >
+          <div class="row" id="tiles-col">
+            <!-- <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/book-nook-armchair-o.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="name">Coombes</div><br>
+                        <div class="category">LOUNGE <span class="price">$2600 </span></div><br>
+                        <div class="category">5 <i class="tiny material-icons">star_border</i></span> <a class="price" href="#" onclick="showDetails('Coombes')"><i class="small material-icons navbarIcon">add_shopping_cart</i></a></div>
+                    </div>
+                  </div>
+            </div> -->
+       
+          </div>
+       
+      
+      </div>
+    </div>
+
+    <!-- <div class="row" id="detailsView">
+
+        <div class="col-md-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./assets/book-nook-armchair-o.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/book-nook-armchair-o.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/book-nook-armchair-o.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <div class="nameSpec">Coombes</div>
+            <div class="categorySpec">LOUNGE</div>
+            <div class="detailsSpec">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+
+        <div class="row mt-5">
+            <div class="col-md-5">
+                <span class="gerySm"> Price per unit</span>  <br>
+                 <span class="largeTxt">$ 2600</span>
+             </div>
+             <div class="col-md-5 mt-3">
+                 <button  type="button" class="btn btn-dark">Buy Now</button>
+             </div>
+             <div class="col-md-2 mt-4">
+                <a href="#"><i class="large material-icons">add_shopping_cart</i></a> 
+             </div>
+        </div>
+
+        </div>
+    </div> -->
+</div>
+    <!-- <script src="./main.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
