@@ -1,14 +1,14 @@
 let fullPageData;
 let responseData;
 
-function onloadf(){
-    let value = '';
-    fetch("http://localhost:3000/furniture").then(response => {return response.json()})
-            .then(data =>{
-                console.log(data);
-                responseData = data;
-                data.forEach(element => {
-                    value+= ` <div class="col-md-4">
+function onloadf() {
+  let value = '';
+  fetch("http://localhost:3000/furniture").then(response => { return response.json() })
+    .then(data => {
+      console.log(data);
+      responseData = data;
+      data.forEach(element => {
+        value += ` <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="${element.path}" alt="Card image cap">
                         <div class="card-body">
@@ -18,29 +18,27 @@ function onloadf(){
                         </div>
                       </div>
                 </div>`
-                });
-                document.getElementById('tiles-col').innerHTML = value
-            }).catch(error =>{
-                console.log("inerror block");
-                if(error) {
-                    console.log(error);
-                    document.getElementById('tiles-col').innerHTML = `<h2>Error: Page not found</h2>`
-                }
-            });
-        
+      });
+      document.getElementById('tiles-col').innerHTML = value
+    }).catch(error => {
+      console.log("inerror block");
+      if (error) {
+        console.log(error);
+        document.getElementById('tiles-col').innerHTML = `<h2>Error: Page not found</h2>`
+      }
+    });
 
-    // document.getElementById('tiles-col').innerHTML = value
 }
 
 
-function showDetails(item){
- console.log("showDetails called");
-let pageData = document.getElementById('fullPage').innerHTML;
-fullPageData = pageData;
-let value ='';
-    responseData.forEach(element =>{
-        if(element.id == item){
-            value = `       <div class="col-md-6">
+function showDetails(item) {
+  console.log("showDetails called");
+  let pageData = document.getElementById('fullPage').innerHTML;
+  fullPageData = pageData;
+  let value = '';
+  responseData.forEach(element => {
+    if (element.id == item) {
+      value = `       <div class="col-md-6">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -87,15 +85,15 @@ let value ='';
         </div>
 
         </div>`
-        }
-    })
-    document.getElementById('fullPage').innerHTML = value;
+    }
+  })
+  document.getElementById('fullPage').innerHTML = value;
 }
 
-function homePage(){
-    document.getElementById('fullPage').innerHTML = fullPageData;
+function homePage() {
+  document.getElementById('fullPage').innerHTML = fullPageData;
 }
 
-function alertBox(){
-    alert("Page is under development");
+function alertBox() {
+  alert("Page is under development");
 }
